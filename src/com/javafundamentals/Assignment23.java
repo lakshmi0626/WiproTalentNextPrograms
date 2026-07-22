@@ -1,0 +1,22 @@
+package com.javafundamentals;
+public class Assignment23 {
+
+    public static void main(String[] args) {
+
+        int[] arr = {10, 20, 30, 40, 50};
+
+        int num = Integer.parseInt(args[0]);
+
+        int index = -1;
+
+        for (int i = 0; i < arr.length; i++) {
+
+            if (arr[i] == num) {
+                index = i;
+                break;
+            }
+        }
+
+        System.out.println(index);
+    }
+}
