@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Assignment 10</title>
+    <style>
+        /* Base border styles required for border-image to show */
+        .border-box {
+            border: 20px solid transparent;
+            padding: 15px;
+            margin: 20px 0;
+            font-size: 24px;
+        }
+
+        /* Case a: Image repeats itself */
+        .repeat-border {
+            border-image-source: url('border.png');
+            border-image-slice: 30;
+            border-image-repeat: repeat;
+        }
+
+        /* Case b: Image stretches to fit */
+        .stretch-border {
+            border-image-source: url('border.png');
+            border-image-slice: 30;
+            border-image-repeat: stretch;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- a. Image repeats itself -->
+    <div class="border-box repeat-border">
+        Welcome to CSS World (Repeated Border)
+    </div>
+
+    <!-- b. Image stretches -->
+    <div class="border-box stretch-border">
+        Welcome to CSS World (Stretched Border)
+    </div>
+
+</body>
+</html>
